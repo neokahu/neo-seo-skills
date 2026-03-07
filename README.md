@@ -11,11 +11,11 @@ Custom Claude Code skills for SEO analysis, built for real-world workflows with 
 ## Installation
 
 ```bash
-# Add individual skill
-claude skills add /path/to/neo-seo-skills/skills/backlink-analysis
+# Clone the repo
+git clone https://github.com/neokahu/neo-seo-skills.git
 
-# Or symlink into your project's .claude/skills/
-ln -s /path/to/neo-seo-skills/skills/backlink-analysis .claude/skills/backlink-analysis
+# Symlink a skill into your project's .claude/skills/
+ln -s "$(pwd)/neo-seo-skills/skills/backlink-analysis" your-project/.claude/skills/backlink-analysis
 ```
 
 ## Required MCP Servers
