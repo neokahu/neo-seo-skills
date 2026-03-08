@@ -187,6 +187,36 @@ Structure the output as a single markdown file with these sections:
 14. Appendix: Crawled Page Classification (table from Phase 2)
 ```
 
+### Phase 5: Visualization Dashboard
+
+After the markdown report is complete, build a single-file HTML dashboard that visualizes the key findings. Use Chart.js (loaded from CDN) for all charts.
+
+The dashboard should include:
+
+**Summary cards row:** Total genuine links, unique domains, dofollow %, profile health score
+
+**Charts:**
+- Donut chart: DR tier distribution (with link counts and percentages)
+- Horizontal bar chart: Website type distribution
+- Donut chart: Anchor text classification
+- Donut chart: Mention context distribution
+- Horizontal bar chart: Link type breakdown (text/image/frame)
+
+**Tables:**
+- Top DR 40+ domains with DR score, link type (DF/NF), and context
+- Top referring domains by link count
+- Toxic link signals with severity ratings
+
+**Design guidelines:**
+- Clean, modern dashboard layout with CSS grid
+- Dark header with domain name and key stats
+- White cards with subtle shadows for each section
+- Responsive — works on desktop and tablet
+- Color palette: use consistent colors across all charts (blue primary, grays for secondary)
+- Save as `[domain]-backlink-dashboard.html` alongside the markdown report
+
+**Important:** Only visualize the genuine/filtered link data, not the raw inflated numbers. The dashboard should tell the same story as the report — show the real competitive surface.
+
 ### Ahrefs MCP Column Reference
 
 Common column names that differ from intuitive naming:
